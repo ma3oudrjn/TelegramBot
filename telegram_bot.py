@@ -1,17 +1,17 @@
 import telebot
 
 # Initialize the bot with your Telegram API token
-bot = telebot.TeleBot("YOUR_TELEGRAM_API_TOKEN")
+bot = telebot.TeleBot("5826178379:AAEg94X1NdN76lbLizrCCYYmPmE7kTTstgc")
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-    bot.reply_to(message, "Welcome to the bot! 😊")
+    bot.reply_to(message, "Welcome to the faradid bot! 😊")
 
-@bot.message_handler(commands=['aboutus'])
+@bot.message_handler(commands=['در باره ما'])
 def handle_aboutus(message):
-    bot.reply_to(message, "We are a team dedicated to providing the best learning experience! 🚀")
+    bot.reply_to(message, "ما تیم فرادیدهستیم و هدف ما ارتقای مهارت برنامه نویسی شماست! 🚀")
 
-@bot.message_handler(commands=['courses'])
+@bot.message_handler(commands=['دوره ها'])
 def handle_courses(message):
     # Create a keyboard markup
     markup = telebot.types.ReplyKeyboardMarkup(row_width=2)
